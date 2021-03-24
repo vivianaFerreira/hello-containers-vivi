@@ -16,12 +16,16 @@
 
 * ## **Introducción a contenedores**
     
-    * ## [Docker](/pages/1/docker.md#¿qué-es-un-contenedor?)
-        * ### [¿Qué es un contenedor?](#¿qué-es-un-contenedor?)
-        * ### [¿Qué es Docker?](#¿qué-es-docker?)
-        * ### [DockerHub](#dockerhub)
-        * ### [Container Registry IBM](#container-registry-ibm)
-        * ### [Pongámoslo en práctica](#pongámoslo-en-práctica)
+    * ## [Docker](#¿qué-es-un-contenedor?)
+        * [¿Qué es un contenedor?](#¿qué-es-un-contenedor?)
+        * [¿Qué es Docker?](#¿qué-es-docker?)
+        * [DockerHub](#dockerhub)
+        * [Container Registry IBM](#container-registry-ibm)
+        * [Pongámoslo en práctica](#pongámoslo-en-práctica)
+        
+          1. [Crear Dockerfile](#1.-crear-dockerfile)
+          2. [Crear imagen](#2.-crear-imagen)
+          3. [Crear contenedor](#3.-crear-contenedor)
 
 
 
@@ -36,7 +40,7 @@ Es una estandarización a cómo empaquetamos y entregamos software. Además, hab
 En la siguiente imagen podemos ver la diferencia entre una máquina virtual y un contenedor:
 
 <p align="center">
-  <img width="600" src="../../images/vms-vs-containers.jpg">
+  <img width="600" src="../../images/1/docker/vms-vs-containers.jpg">
 </p>
 
 ---
@@ -68,7 +72,7 @@ Los Dockerfile funcionan por medio de, principalmente, 7 posibles instrucciones:
 
 ## Container Registry IBM
 
-**Container Registry** es un servicio provisto por ***IBM Cloud*** para almacenar y distribuir imágenes de contenedores en un registro privado y completamente administrado por nosotros, siendo similar a DockerHub. Además, gracias a las herramientas de seguridad de IBM, nuestras imágenes pueden ser revisadas para detectar problemas de seguridad e informarnos de los mismo para que tomemos las precauciones pertinentes. El servicio nos permite almacenar hasta 600 MB de forma gratuita, luego el costo depende del peso de nuestras imágenes.
+**Container Registry** es un servicio provisto por ***IBM Cloud*** para almacenar y distribuir imágenes de contenedores en un registro privado y completamente administrado por nosotros, siendo similar a DockerHub. Además, gracias a las herramientas de seguridad de IBM, nuestras imágenes pueden ser revisadas para detectar problemas de seguridad e informarnos de los mismo para que tomemos las precauciones pertinentes. El servicio nos permite almacenar hasta 600 MB de forma gratuita, luego el costo depende del peso de nuestras imágenes. (*Veremos este tema con mayor detalle más adelante*)
 
 ---
 
@@ -93,14 +97,14 @@ $ touch Dockerfile
 Deberiamos ahora, ver en nuestra carpeta el siguiente archivo nuevo:
 
 <p align="center">
-  <img width="350" src="../../images/saved-dockerfile.png">
+  <img width="350" src="../../images/1/docker/saved-dockerfile.png">
 </p>
 
 Ahora abrimos este archivo desde nuestro editor de texto, en nuestro caso usamos el *bloc de notas*:
 
 <p align="center">
-  <img width="250" src="../../images/open-dockerfile.png">
-  <img width="280" src="../../images/select-dockerfile.png">
+  <img width="250" src="../../images/1/docker/open-dockerfile.png">
+  <img width="280" src="../../images/1/docker/select-dockerfile.png">
 </p>
 
 Una vez dentro del archivo para editar, empecemos a escribir la instrucciones. La primera será la de la imagen base. Usaremos node en su versión 14 que está disponible como imagen oficial en DockerHub:
@@ -132,7 +136,7 @@ CMD [ "node", "server.js"]
 Una vez terminado, debería quedarnos algo parecido a lo siguiente:
 
 <p align="center">
-  <img width="500" src="../../images/done-dockerfile.png">
+  <img width="500" src="../../images/1/docker/done-dockerfile.png">
 </p>
 
 ¡Genial! Solo falta guardarlo y ya tendríamos nuestro Dockerfile listo.
@@ -143,9 +147,9 @@ Una vez terminado, debería quedarnos algo parecido a lo siguiente:
 
 <br>
 
-Para trabajar con imagenes de Docker usaremos los comandos de la CLI que descargamos, es por ello que siempre comenzarán con *docker*. En este caso, para crear una imagen se usa el comando *docker build*, además, hay que agregarle un nombre (*tag*), para eso usamos *-t* seguido del nombre (**es una buena práctica crear el tag con este formato `<usuario>/<nombre>`**). Por último, se ve un punto ( **.** ), que especifica la ruta al Dockerfile (como estamos en el mismo directorio que el Dockerfile, se coloca solo un punto):
+Para trabajar con imagenes de Docker usaremos los comandos de la CLI que descargamos, es por ello que siempre comenzarán con *docker*. En este caso, para crear una imagen se usa el comando *docker build*, además, hay que agregarle un nombre (*tag*), para eso usamos *-t* seguido del nombre (**es una buena práctica crear el tag con este formato `<usuario>/<nombre>:<versión>`**). Por último, se ve un punto ( **.** ), que especifica la ruta al Dockerfile (como estamos en el mismo directorio que el Dockerfile, se coloca solo un punto):
 ```console
-$ docker build -t <usuario>/lab-1 .
+$ docker build -t <usuario>/lab-1:0.1 .
 
 Resultado:
 [+] Building 3.2s (11/11) FINISHED
@@ -165,25 +169,72 @@ Resultado:
  => exporting to image                0.1s
  => => exporting layers                0.0s
  => => writing image sha256:33d8a...                0.0s
- => => naming to docker.io/ssouto2001/lab-1                0.0s
+ => => naming to docker.io/ssouto2001/lab-1:0.1                0.0s
 ```
 
 Para confirmar que la imagen se creó correctamente usaremos:
-```
+```console
 $ docker images
 
 Resultado:
 REPOSITORY              TAG       IMAGE ID       CREATED         SIZE
-ssouto2001/lab-1        latest    33d8a398f403   3 minutes ago   945MB
+ssouto2001/lab-1        0.1       33d8a398f403   3 minutes ago   945MB
 ```
 
+## 3. Crear contenedor
+
+Una vez que confirmamos que la imagen se creó correctamente vamos a ejecutar el contenedor de la imagen con *docker run* usando alguna *"flags"* comunes. ***-p*** indica el puerto que va a exponer, y ***-d*** deja al contenedor funcionando en "segundo plano" para que se pueda seguir escribiendo en la consola:
+```console
+$ docker run -p 8080:8080 -d <usuario>/lab-1:0.1
+
+Resultado:
+b276485632547df81361f318fee1f7cf5b8ecbe4d05904a3537e44318c75e1b0
+```
+Ahora, para confirmar que el contenedor se creó correctamente vamos a consultar lo siguiente:
+```console
+$ docker ps
+CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS         PORTS                    NAMES
+b27648563254   ssouto2001/lab-1:0.1   "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   0.0.0.0:8080->8080/tcp   relaxed_chebyshev
+```
+Con este comando podes conocer el **CONTAINER ID** para revisar sus logs (*al momento de escribir el ID del contenedor, podemos escribir el numero completó o al menos los primeros tres dígitos*):
+```console
+$ docker logs b27648563254
+Resultado:
+App listening on port 8080
+```
+Ahora podemos acceder a http://localhost:8080 y verificar el mensaje correcto.
+
+## 4. Subir la imagen a DockerHub
+
+Es momento de subir nuestra imagen a un repositorio donde podremos configurarlo como público o privado (dependiendo el plan que tengamos) en DockerHub, para ello, debemos tener una [cuenta de DockerHub creada](https://hub.docker.com/signup).
+
+Una vez creada la cuenta, accederemos desde la terminal:
+```console
+$ docker login
+```
+
+Luego, debemos hacer un *tag* (darle nombre en el destino) a nuestra imagen que creamos anteriormente:
+```console
+$ docker tag <tu-imagen> <usuario-docker>/<nombre-del-repo>
+```
+
+Ahora solo queda ejectuar *docker push* para subir la imagen al repositorio:
+```console
+$ docker push <usuario-docker>/<nombre-del-repo>
+```
+
+¡Listo! Podemos verificar que se publicó correctamente la imagen en nuestra cuenta de DockerHub:
+
+<p align="center">
+  <img width="700" src="../../images/1/docker/docker-hub.png">
+</p>
 
 
-
-
-
+### Con esto finalizamos el lab y sección de Docker. Avancemos a la siguiente sección... **Kubernetes**
 
 
 ---
+
+* [→ Siguiente Sección (Kubernetes)](kubernetes.md#kubernetes)
 
 * [← Volver al índice](/README.md)
