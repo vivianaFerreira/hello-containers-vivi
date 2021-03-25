@@ -6,7 +6,7 @@
 
 
 
-* [← Volver al índice](/README.md)
+* [← Volver al índice](/README.md#indice)
 ---
   
 
@@ -18,8 +18,8 @@
         * [¿Qué es kubernetes?](#¿qué-es-kubernetes?)
         * [Objetos básicos de Kubernetes](#objetos-básicos-de-kubernetes)
         * [Pongámoslo en práctica](#pongámoslo-en-práctica)
-            1. [Crear Kubernetes cluster](#crear-kubernetes-cluster)
-            2. [Crear un Deployment](#crear-un-deployment)
+          1. [Crear Kubernetes cluster](#crear-kubernetes-cluster)
+          2. [Crear un Deployment](#crear-un-deployment)
 
 ---
 
@@ -230,11 +230,11 @@ Events:
 
 Además de esto, podemos entrar al *dashboard* de Kubernetes desde IBM Cloud. ¡Invitamos a que exploren esa área!
 
-### Con esto finalizamos el lab y sección de Kubernetes, además de la primera lección de *Introducción a contenedores*. Avancemos a la siguiente sección... **OpenShift**
+### Con esto finalizamos el lab y sección de Kubernetes, además de la primera lección de *Introducción a contenedores*. Avancemos a la siguiente sección... **Container Registry**
 
 
 ---
 
-* [→ Siguiente Sección (OpenShift)](../2/openshift.md#openshift)
+* [→ Siguiente Sección (Container Registry)](../2/container_registry.md#container-registry)
 
-* [← Volver al índice](/README.md)
+* [← Volver al índice](/README.md#indice)

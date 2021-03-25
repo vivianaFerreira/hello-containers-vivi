@@ -8,7 +8,7 @@
 
 ### Hablaremos un poco sobre la definición de un contenedor, Docker, DockerHub, Docker images, y cómo crearlas.
 
-* [← Volver al índice](/README.md)
+* [← Volver al índice](/README.md#indice)
 ---
   
 
@@ -22,7 +22,6 @@
         * [DockerHub](#dockerhub)
         * [Container Registry IBM](#container-registry-ibm)
         * [Pongámoslo en práctica](#pongámoslo-en-práctica)
-        
           1. [Crear Dockerfile](#1.-crear-dockerfile)
           2. [Crear imagen](#2.-crear-imagen)
           3. [Crear contenedor](#3.-crear-contenedor)
@@ -237,4 +236,4 @@ $ docker push <usuario-docker>/<nombre-del-repo>
 
 * [→ Siguiente Sección (Kubernetes)](kubernetes.md#kubernetes)
 
-* [← Volver al índice](/README.md)
+* [← Volver al índice](/README.md#indice)
