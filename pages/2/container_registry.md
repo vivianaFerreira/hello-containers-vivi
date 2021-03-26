@@ -145,7 +145,7 @@ Podemos verificar que se subió correctamente con el siguiente comando:
 $ ibmcloud cr image-list
 ```
 
-### Con esto finalizamos el lab y lección de Container Registry. Avancemos a la siguiente sección... **OpenShift**
+### Con esto finalizamos el lab y lección de Container Registry. Avancemos a la siguiente lección... **OpenShift**
 
 
 ---
