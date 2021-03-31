@@ -6,42 +6,54 @@
 
 
 
-* [← Volver al índice](/README.md)
+* [← Volver al índice](/README.md#indice)
 ---
   
 
-## Indice:
+## *Indice de la sección:*
 
-1. **Introducción a contenedores**
+* ## **Desplegar imagenes**
     
-    1.1. [Docker](/pages/1/docker.md#docker)
+    * []()
+    * []()
+    * []()
+    * []()
+    * []()
+    * []()
+    * []()
     
-    1.2. [Kubernetes](/pages/1/kubernetes.md#kubernetes)
 
-2. [**OpenShift**](/pages/2/openshift.md#openshift)
+---
 
-3. [**Container Registry**](/pages/3/container_registry.md#container-registry)
+### La idea de esta sección es visualizar las diferentes formas que nos ofrece OpenShift de desplegar imagenes en nuestro cluster, y visualizar cómo con pocos clicks, podemos tener desplegada, por ejemplo, una web app.
 
-4. **OpenShift 2.0**
+### Las formas que existen de crear o desplegar aplicaciones son:
+### → From Git
+### → Container image
+### → From Dockerfile
+### → YAML
+### → From Catalog
 
-    4.1. [Desplegar imagenes](/pages/4/desplegar_imagenes.md#desplegar-imagenes)
+### Las veremos más en detalle a cada una de estas junto con una parte práctica (*Lab*) al final.
 
-    4.2. [DevOps/Toolchain/TekTon](/pages/4/devops.md#devops,-toolchains-&-tekton)
 
-    4.3. [Monitoring](/pages/4/monitoring.md#monitoring)
+---
 
-    4.4. [Logging](/pages/4/logging.md#logging)
+## From Git
 
-    4.5. [Vista de administrador](/pages/4/vista_de_administrador.md#vista-de-administrador)
+Lo que hace esta opción es tomar una aplicación en un repositorio de GitHub (*source code*) y se le asigna una *image-builder* según el lenguaje usado. Básicamente, una *image-builder* es un *template* que crea automáticamente una imagen, un despliegue, un servicio y una ruta sobre un código fuente sin necesidad de, por ejemplo, un *Dockerfile*.
 
-5. [**Satellite**](/pages/5/satellite.md#satellite)
-
-6. [**Helm**](/pages/6/helm.md#helm)
-
-7. [**Istio**](/pages/7/istio.md#istio)
-
+### Pongámoslo en practica (From Git)
 
 
 
+---
 
-* [← Volver al índice](/README.md)
+### Con esto finalizamos la sección introductoria de OpenShift. Avancemos a la siguiente sección... **Devops, Toolchains & TekTon**
+
+
+---
+
+* [→ Siguiente Sección (DevOps/Toolchains/TekTon)](../3.3/devops.md#devops,-toolchains-&-tekton)
+
+* [← Volver al índice](/README.md#indice)

@@ -16,10 +16,10 @@
     
     * ## [Kubernetes]()
         * [¿Qué es kubernetes?](#¿qué-es-kubernetes?)
-        * [Objetos básicos de Kubernetes](#objetos-básicos-de-kubernetes)
+        * [Arquitectura de Kubernetes](#arquitectura-de-kubernetes)
         * [Pongámoslo en práctica](#pongámoslo-en-práctica)
-          1. [Crear Kubernetes cluster](#crear-kubernetes-cluster)
-          2. [Crear un Deployment](#crear-un-deployment)
+          1. [Crear Kubernetes cluster](#1.-crear-kubernetes-cluster)
+          2. [Crear un Deployment](#2.-crear-un-deployment)
 
 ---
 
@@ -35,7 +35,11 @@ Dentro de Kubernetes podemos identificar algunos **objetos**. Estos son entidade
 
 ---
 
-## Objetos básicos de Kubernetes
+## Arquitectura de Kubernetes
+
+* #### **Nodo trabajador:** Se encarga de realizar las tareas requeridas y asignadas.
+
+* #### **Nodo Master:** Controla los *nodos trabajadores* de Kubernetes. Aquí es donde se originan todas las asignaciones de tareas.
 
 * #### **Pod:** Es la unidad más simple en un Kubernetes. Representa los procesos ejeutandose en el cluster. Puede encapsular a uno o múltiples contenedores. Replicar un Pod es equivalente a escalar una aplicación horizontalmente.
 

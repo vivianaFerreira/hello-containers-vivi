@@ -14,10 +14,14 @@
 
 * ## **Introducción a OpenShift**
     
-    * []()
-    * []()
-    * []()
-    * []()
+    * [Red Hat OpenShift Kubernetes Service (ROKS)](#red-hat-openshift-kubernetes-service-(roks))
+    * [Red Hat Openshift en IBM Cloud](#red-hat-openshift-en-ibm-cloud)
+      * [Contenedores y Kubernetes](#contenedores-y-kubernetes)
+      * [Red Hat OpenShift Service](#red-hat-openshift-service)
+      * [¿En qué nos podemos beneficiar al usar Red Hat OpenShift?](#¿en-qué-nos-podemos-beneficiar-al-usar-red-hat-openshift)
+      * [Infraestructura de Red Hat OpenShift Kubernetes Service (ROKS)](#infraestructura-de-red-hat-openshift-kubernetes-service-(roks))
+    * [Instalar la CLI de Red Hat OpenShift para trabajar desde la terminal](#instalar-la-cli-de-red-hat-openshift-para-trabajar-desde-la-terminal)
+    * [Crear un cluster y entrar al dashboard](#crear-un-cluster-y-entrar-al-dashboard)
     
 
 ---
@@ -55,7 +59,7 @@ Red Hat Openshift tiene todo lo necesario para *hybrid cloud*, contenedores a ni
 * Además, admite una amplia gama de aplicaciones por lo que los desarrolladores pueden ser más productivos al momento de construir aplicaciones en Red Hat OpenShift.
 * Funciona como un servicio de código abierto (*open source*).
 
-### Infraestuctura de Red Hat OpenShift Kubernetes Service (ROKS)
+### Infraestructura de Red Hat OpenShift Kubernetes Service (ROKS)
 
 Como vemos en la imagen, *ROKS* se compone de el sistema operativo Linux *Enterprise Linux CoreOS*, luego tenemos la capa de Kubernetes, las operaciones automatizadas (*que las veremos en una sección próxima*) y luego, las diferentes soluciones o características que ofrece:
 <p align="center">
@@ -66,7 +70,39 @@ Como vemos en la imagen, *ROKS* se compone de el sistema operativo Linux *Enterp
 
 ## Instalar la CLI de Red Hat OpenShift para trabajar desde la terminal
 
-Si bien, nosotros veremos principalmente como usar **ROKS** por medio del *dashboard* en la web, es importante saber que podremos hacer todo eso desde la terminal instalando el CLI de OpenShift.
+Si bien, nosotros veremos principalmente como usar **ROKS** por medio del *dashboard* en la web, es importante saber que podremos hacer todo eso desde la terminal instalando el CLI de OpenShift. <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-openshift-cli">Haga click aquí</a> para ser redirigido a la documentación de IBM Cloud para instalarlo.
+
+---
+
+## Crear un cluster y entrar al dashboard
+
+Vamos a crear un cluster de OpenShift desde IBM Cloud:
+
+Lo primero que debemos hacer es entrar con nuestra cuenta a [IBM Cloud](https://cloud.ibm.com) y abrir la barra lateral izquierda, en la parte de *OpenShift* - *Clusters*:
+
+<p align="center">
+  <img width="700" src="../../images/3/ibm-cloud-dashboard.png">
+</p>
+
+Luego, cliqueamos en *Crear un cluster de OpenShift +*:
+
+<p align="center">
+  <img width="700" src="../../images/3/ibm-cloud-openshift.png">
+</p>
+
+Luego elegimos el plan que mejor se ajuste a nuestras necesidades y lo podremos ver en la misma sección donde presionamos para crearlo (*imagen anterior*)
+
+Una vez creado, entramos al cluster, y para abrir el *dashboard* de OpenShift (*web console*) cliqueamos en *Consola web de OpenShift*:
+
+<p align="center">
+  <img width="700" src="../../images/3/open-web-console.png">
+</p>
+
+Y listo, debería abrirnos una nueva ventana con la consola web de OpenShift lista para trabajar:
+
+<p align="center">
+  <img width="700" src="../../images/3/openshift-dashboard.png">
+</p>
 
 ---
 
