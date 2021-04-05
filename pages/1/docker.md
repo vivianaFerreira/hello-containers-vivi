@@ -22,9 +22,9 @@
         * [DockerHub](#dockerhub)
         * [Container Registry IBM](#container-registry-ibm)
         * [Pongámoslo en práctica](#pongámoslo-en-práctica)
-          1. [Crear Dockerfile](#1.-crear-dockerfile)
-          2. [Crear imagen](#2.-crear-imagen)
-          3. [Crear contenedor](#3.-crear-contenedor)
+          1. [Crear Dockerfile](#1-crear-dockerfile)
+          2. [Crear imagen](#2-crear-imagen)
+          3. [Crear contenedor](#3-crear-contenedor)
 
 
 
@@ -81,7 +81,7 @@ Los Dockerfile funcionan por medio de, principalmente, 7 posibles instrucciones:
 
 ### Primero lo primero: una vez que tengamos creadas las cuentas de DockerHub e IBM Cloud, pasemos a descargar la CLI tanto de [**Docker**](https://docs.docker.com/get-docker/), como de [**IBM Cloud**](https://cloud.ibm.com/docs/cli?topic=cli-getting-started).
  
-### Lo que haremos será crear una imagen a partir de una web app simple en *node.js* que la pueden descargar <a href="../../assets/lab1/lab1-learning-path.zip" download="Lab-1-node-web-app.zip">haciendo click aquí.</a> Una vez extraída la carpeta podremos continuar trabajando en ella.
+### Lo que haremos será crear una imagen a partir de una web app simple en *node.js* que la pueden descargar <a href="https://github.com/IBMInnovationLabUY/pyxis-ocp/raw/master/assets/lab1/lab1-learning-path.zip" download="Lab-1-node-web-app.zip">haciendo click aquí.</a> Una vez extraída la carpeta podremos continuar trabajando en ella.
 
 ## 1. Crear Dockerfile
 
@@ -201,7 +201,11 @@ $ docker logs b27648563254
 Resultado:
 App listening on port 8080
 ```
-Ahora podemos acceder a http://localhost:8080 y verificar el mensaje correcto.
+Ahora podemos acceder a http://localhost:8080 y verificar el mensaje correcto:
+
+<p align="center">
+  <img width="500" src="../../images/1/docker/app-deployed.png">
+</p>
 
 ## 4. Subir la imagen a DockerHub
 

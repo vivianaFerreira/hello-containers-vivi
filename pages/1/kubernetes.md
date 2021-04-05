@@ -18,8 +18,8 @@
         * [¿Qué es kubernetes?](#¿qué-es-kubernetes?)
         * [Arquitectura de Kubernetes](#arquitectura-de-kubernetes)
         * [Pongámoslo en práctica](#pongámoslo-en-práctica)
-          1. [Crear Kubernetes cluster](#1.-crear-kubernetes-cluster)
-          2. [Crear un Deployment](#2.-crear-un-deployment)
+          1. [Crear Kubernetes cluster](#1-crear-kubernetes-cluster)
+          2. [Crear un Deployment](#2-crear-un-deployment)
 
 ---
 

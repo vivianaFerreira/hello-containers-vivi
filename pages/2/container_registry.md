@@ -18,10 +18,10 @@
     * [¿Qué es un *Container Registry*?](#¿qué-es-un-container-registry?)
     * [IBM Cloud Container Registry Service](#ibm-cloud-container-registry-service)
     * [Pongámoslo en práctica](#pongámoslo-en-práctica)
-      1. [Conectarnos con IBM Cloud CLI y el plugin container-registry](#1.-conectarnos-con-ibm-cloud-cli-y-el-plugin-container-registry)
-      2. [Crear un *namespace*](#2.-crear-un-namespace)
-      3. [Conectar **Docker** con **IBM Cloud Container Registry**](#3.-conectar-docker-con-ibm-cloud-container-registry)
-      4. [Subir la imagen](#4.-subir-la-imagen)
+      1. [Conectarnos con IBM Cloud CLI y el plugin container-registry](#1-conectarnos-con-ibm-cloud-cli-y-el-plugin-container-registry)
+      2. [Crear un *namespace*](#2-crear-un-namespace)
+      3. [Conectar **Docker** con **IBM Cloud Container Registry**](#3-conectar-docker-con-ibm-cloud-container-registry)
+      4. [Subir la imagen](#4-subir-la-imagen)
     
 
 ---
@@ -108,7 +108,7 @@ $ ibmcloud cr namespace-add <nombre-del-namespace>
 
 Podemos verificar que se creó correctamente listando todos los espacios de nombre:
 ```console
-$ ibmcloud cr namespace-list
+$ ibmcloud cr namespaces
 ```
 
 ## 3. Conectar **Docker** con **IBM Cloud Container Registry**
