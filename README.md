@@ -26,15 +26,15 @@ Bienvenidos al learning path sobre contenedores. A lo largo de este contenido va
     
     3.1. [Introducción](pages/3/openshift.md#openshift)
 
-    3.2. [Desplegar imagenes](pages/3/desplegar_imagenes.md#desplegar-imagenes)
+    3.2. [Desplegar imagenes](pages/3/3.2/desplegar_imagenes.md#desplegar-imagenes)
 
-    3.3. [DevOps/Toolchain/TekTon](pages/3/devops.md#devops,-toolchains-&-tekton)
+    3.3. [DevOps/Toolchain/TekTon](pages/3/3.3/devops.md#devops,-toolchains-&-tekton)
 
-    3.4. [Monitoring](pages/3/monitoring.md#monitoring)
+    3.4. [Monitoring](pages/3/3.4/monitoring.md#monitoring)
 
-    3.5. [Logging](pages/3/logging.md#logging)
+    3.5. [Logging](pages/3/3.5/logging.md#logging)
 
-    3.6. [Vista de administrador](pages/3/vista_de_administrador.md#vista-de-administrador)
+    3.6. [Vista de administrador](pages/3/3.6/vista_de_administrador.md#vista-de-administrador)
 
 4. [**Satellite**](pages/4/satellite.md#satellite)
 
