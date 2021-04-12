@@ -15,13 +15,13 @@
 * ## **Desplegar imagenes**
     
     * [From Git](#from-git)
-        * [Pongámoslo en práctica (From Git)](#pongámoslo-en-práctica-(from-git))
+        * [Pongámoslo en práctica (From Git)](#pongámoslo-en-práctica-from-git)
     * [From Dockerfile](#from-dockerfile)
-        * [Pongámoslo en práctica (From Dockerfile)](#pongámoslo-en-práctica-(from-dockerfile))
+        * [Pongámoslo en práctica (From Dockerfile)](#pongámoslo-en-práctica-from-dockerfile)
     * [From Catalog](#from-catalog)
-        * [Pongámoslo en práctica (From Catalog)](#pongámoslo-en-práctica-(from-catalog))
+        * [Pongámoslo en práctica (From Catalog)](#pongámoslo-en-práctica-from-catalog)
     * [Container Registry](#container-registry)
-        * [Pongámoslo en práctica (Container Registry)](#pongámoslo-en-práctica-(container-registry))
+        * [Pongámoslo en práctica (Container Registry)](#pongámoslo-en-práctica-container-registry)
     
 
 ---

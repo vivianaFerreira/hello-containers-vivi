@@ -24,7 +24,7 @@ Bienvenidos al learning path sobre contenedores. A lo largo de este contenido va
 
 3. **OpenShift**
     
-    3.1. [Introducción](pages/3/openshift.md#openshift)
+    3.1. [Introducción](pages/3/openshift.md#introducción-a-openshift)
 
     3.2. [Desplegar imagenes](pages/3/3.2/desplegar_imagenes.md#desplegar-imagenes)
 
