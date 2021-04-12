@@ -97,7 +97,7 @@ Vemos que el despliegue tiene un anillo celeste, eso significa que esta creando 
   <img width="250" src="../../../images/3/lab2/ready-from-git.png">
 </p>
 
-Ahora podemos presionar en el botón superior derecho para que nos redireccione a la URL pública creada automáticamente y veremos el mensaje:
+Ahora podemos presionar en el botón superior derecho para que nos redireccione a la URL pública creada automáticamente y veremos la página desplegada:
 
 <p align="center">
   <img width="700" src="../../../images/3/lab2/app-deployed.png">
@@ -155,7 +155,7 @@ Esperamos a que termine de crear la imagen y una vez listo, pasará a tener un a
   <img width="250" src="../../../images/3/lab3/ready-from-dockerfile.png">
 </p>
 
-Ahora podemos presionar en el botón superior derecho para que nos redireccione a la URL pública creada automáticamente y veremos el mensaje:
+Ahora podemos presionar en el botón superior derecho para que nos redireccione a la URL pública creada automáticamente y veremos la página desplegada:
 
 <p align="center">
   <img width="700" src="../../../images/3/lab3/app-deployed.png">
