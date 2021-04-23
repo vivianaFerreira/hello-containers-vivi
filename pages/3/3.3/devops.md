@@ -10,38 +10,54 @@
 ---
   
 
-## Indice:
+## *Indice de la sección:*
 
-1. **Introducción a contenedores**
+* ## **Devops, Toolchains & TekTon**
     
-    1.1. [Docker](/pages/1/docker.md#docker)
+    * [Introducción a DevOps](#introducción-a-devops)
+    * [TekTon](#tekton)
+    * []()
+    * [IBM Cloud Toolchain](#ibm-cloud-toolchain)
+        * [Pongámoslo en práctica](#pongámoslo-en-práctica)
+    * []()
+    * []()
+    * []()
     
-    1.2. [Kubernetes](/pages/1/kubernetes.md#kubernetes)
+---
 
-2. [**OpenShift**](/pages/2/openshift.md#openshift)
+## Introducción a DevOps
 
-3. [**Container Registry**](/pages/3/container_registry.md#container-registry)
+Cuando hablamos de DevOps, nos referimos a una forma que encontraron los desarrolladores de software para automatizar ciertos procesos rutinarios. Como ya lo mencionamos en secciones anteriores, gracias a DevOps podremos olvidarnos de todos los tediosos pasos de crear un Dockerfile, crear una imagen, subirla a un repositorio, desplegarla en Kubernetes, o desplegarla en OpenShift cada vez que hacemos un cambio en nuestro código; sino que simplemente, subiendo nuestro código fuente a un repositorio Git, tendremos todos estos pasos asegurados sin preocuparnos por hacerlos nosotros, pudiendo ver y pausar en cualquier momento dicha automatización por si notamos un error o queremos ver los logs de estos procesos.
 
-4. **OpenShift 2.0**
+DevOps en sí, cuenta con algunos principios que estaría bueno conocer:
 
-    4.1. [Desplegar imagenes](/pages/4/desplegar_imagenes.md#desplegar-imagenes)
+* Desarrollar y testear frente a sistemas similares a producción.
+* Desplegar con procesos confiables y repetibles.
+* Monitorear y validar operaciones de calidad.
+* Amplificar el ciclo de retroalimentación.
 
-    4.2. [DevOps/Toolchain/TekTon](/pages/4/devops.md#devops,-toolchains-&-tekton)
+<p align="center">
+  <img width="400" src="../../../images/3/DevOps/devops-logo.png">
+</p>
 
-    4.3. [Monitoring](/pages/4/monitoring.md#monitoring)
+---
 
-    4.4. [Logging](/pages/4/logging.md#logging)
+## TekTon
 
-    4.5. [Vista de administrador](/pages/4/vista_de_administrador.md#vista-de-administrador)
+---
 
-5. [**Satellite**](/pages/5/satellite.md#satellite)
+## IBM Cloud Toolchain
 
-6. [**Helm**](/pages/6/helm.md#helm)
+## Pongámoslo en práctica
 
-7. [**Istio**](/pages/7/istio.md#istio)
+---
+
+### Con esto finalizamos la sección de Devops, Toolchains & TekTon. Avancemos a la siguiente sección... **Monitoring & Logging**
 
 
 
+---
 
+* [→ Siguiente Sección (Monitoring & Logging)](../3.4/monitoring-logging.md#monitoring-&-logging)
 
 * [← Volver al índice](/README.md)
