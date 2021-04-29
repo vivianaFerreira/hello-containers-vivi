@@ -15,13 +15,10 @@
 * ## **Devops, Toolchains & TekTon**
     
     * [Introducción a DevOps](#introducción-a-devops)
-    * [TekTon & OpenShift Pipelines](#tekton-&-openshift-pipelines)
-    * []()
     * [IBM Cloud Toolchain](#ibm-cloud-toolchain)
         * [Pongámoslo en práctica](#pongámoslo-en-práctica)
-    * []()
-    * []()
-    * []()
+    * [TekTon en IBM Cloud Toolchain](#tekton-en-ibm-cloud-toolchain)
+        * [Pongámoslo en práctica](#pongámoslo-en-práctica-tekton)
     
 ---
 
@@ -146,7 +143,7 @@ TekTon define algunos recursos personalizados de Kubernetes como bloques para es
 
 Con IBM Cloud Toolchain, tenemos la opción de crear una automatización muy parecida a la del lab anterior usando pipelines de TekTon, con Tasks preconfiguradas en vez de pipelines clásicas.
 
-## Pongámoslo en práctica
+## Pongámoslo en práctica (Tekton)
 
 ### Para comenzara hacemos los mismos primeros pasos del lab anterior hasta la parte del catálogo de *templates* donde seleccionaremos *Develop a Kubernetes app* nuevamente...
 
@@ -230,9 +227,7 @@ Ahora, para crear una ruta, es bastante simple, simplemente hay que ir al área 
 
 ---
 
-### Con esto finalizamos la sección de Devops, Toolchains & TekTon. Avancemos a la siguiente sección... **Monitoring & Logging**
-
-
+### Con esto finalizamos la sección de Devops, Toolchains & TekTon. Avancemos a la última sección... **Monitoring & Logging**
 
 ---
 
